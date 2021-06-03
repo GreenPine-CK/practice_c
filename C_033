@@ -1,0 +1,33 @@
+// 이창근의 C프로그래밍, 1만 시간의 법칙!!
+// C언어 코딩 :: chapter 33, overflow
+
+#include <stdio.h>
+
+int main(void)
+
+{
+	
+	signed char a = 100;
+	signed char b = 200;
+	unsigned char c = 250;
+	unsigned char d = -50;
+	
+	puts("---------------------------");
+	puts(" * 그릇의 넘침(overflow) * ");
+	puts("---------------------------");
+	
+	
+	printf(" a= %d, b= %d, c= %d, d= %d \n", a, b, c, d );
+	printf("------------------------------------------- \n");
+	
+	puts(" 값의 범위 signed char 는 -128~127");
+	puts(" unsigned char는 0~255 생략하면 signed ");
+	/*  signed char 는 부호가 있는 1 바이트이기 때문에 2^8이 아닌 2^7을 저장할 수 있고
+	즉 -128 ~ 128까지 저장할 수 있으며, 부호가 없는 unsigned char 1바이트는 2^8인 0~255까지 저장 할 수 있음. */
+	 
+	puts("---------------------------------------");
+	
+	return 0;
+	
+	 
+ } 
