@@ -1,0 +1,38 @@
+// 이창근의 C프로그래밍, 1만 시간의 법칙!!
+// C언어 코딩 :: chapter 37, 구조체 맞교환 
+
+#include<stdio.h>
+
+struct Book
+{
+	char title[20];   // 책 제목
+	char author[20];  // 저자
+	int series;       // 시리즈 권 수
+	
+	 
+ } ;
+ 
+ typedef struct Book Book;
+ 
+ int main(void)
+ {
+ 	
+ 	Book b1 = { "태백산맥", "조정래", 10}, b2 = { "토   지 ", "박경리", 20 };
+	Book tmp ;
+	
+	puts("----------------------");
+	puts(" ** 구조체 맞 교환 ** ");
+	puts("----------------------");
+	
+	printf(" b1 : %10s %10s %4d권 \n ", b1.title, b1.author, b1.series);
+	printf(" b2 : %10s %10s %4d권 \n ", b1.title, b1.author, b2.series);
+	puts("----------------------");
+	
+	puts("구조체 맞교환은 정수교환과 동일");
+	puts("----------------------");
+	
+	return 0;
+	 
+	 
+ 	
+  } 
